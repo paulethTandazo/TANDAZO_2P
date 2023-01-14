@@ -20,5 +20,10 @@ public class Pedido {
         this.nombreCliente = nombreCliente;
         this.total = total;
     }
+
+    @Override
+    public String toString() {
+        return "Pedido{" + "idPedido=" + idPedido + ", nombreCliente=" + nombreCliente + ", total=" + total + '}';
+    }
     
 }
