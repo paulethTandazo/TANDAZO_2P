@@ -1,0 +1,8 @@
+descripcion,precio,tipo
+hamburguesa simple,5.00,F
+Hamburguesa completa,6.50,F
+Torta de vainilla,3.5,P
+Inca cola 400ml,1,B
+tiramisú,4.00,P
+coca cola 400ml,2.00,B
+cheese fingers x5,3.00,Q

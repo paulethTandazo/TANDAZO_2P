@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="700.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pooespol.tandazopauleth.proyectotandazo.PedidoController">
+   <children>
+      <HBox prefHeight="77.0" prefWidth="600.0">
+         <children>
+            <Label text="Realice su pedido" textFill="#eb9515">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="55.0" prefWidth="600.0" spacing="30.0">
+         <children>
+            <Label text="Tipo: ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+            </Label>
+            <ComboBox fx:id="cbxTipo" prefWidth="150.0" />
+            <Label text="Ordenar por:">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cbxOrdenar" prefWidth="150.0" />
+         </children>
+      </HBox>
+      <HBox prefHeight="188.0" prefWidth="650.0" spacing="13.0">
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+         <children>
+            <VBox fx:id="vboxOpciones" prefHeight="188.0" prefWidth="359.0">
+               <children>
+                  <Label text="Opciones" textFill="#eb9515">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <HBox fx:id="hboxOpciones" prefHeight="34.0" prefWidth="303.0" spacing="30.0">
+                     <children>
+                        <Label text="Descripción">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label text="Precio">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label text="Cantidad">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label text="agregar">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <VBox fx:id="vboxmenu" prefHeight="143.0" prefWidth="370.0" />
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="174.0" prefWidth="264.0">
+               <children>
+                  <Label text="Pedido" textFill="#eb9515">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <TableView prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="Descripción" />
+                      <TableColumn prefWidth="90.6666259765625" text="Cantidad" />
+                        <TableColumn prefWidth="96.66668701171875" text="Precio" />
+                    </columns>
+                  </TableView>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

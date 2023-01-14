@@ -1,0 +1,11 @@
+Menu\Menu.class
+Cliente\Cliente.class
+com\pooespol\tandazopauleth\proyectotandazo\SecondaryController.class
+com\pooespol\tandazopauleth\proyectotandazo\PrincipalController.class
+module-info.class
+Pedido\Pedido.class
+com\pooespol\tandazopauleth\proyectotandazo\App.class
+com\pooespol\tandazopauleth\proyectotandazo\PedidoController.class
+com\pooespol\tandazopauleth\proyectotandazo\LocalController.class
+Local\Local.class
+Menu\tipoMenu.class
