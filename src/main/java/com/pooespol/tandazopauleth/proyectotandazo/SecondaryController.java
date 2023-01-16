@@ -51,7 +51,7 @@ public class SecondaryController implements Initializable {
         Stage s = new Stage();
         FXMLLoader fxmlloader = new FXMLLoader(App.class.getResource("Pedido.fxml"));
         Parent root = fxmlloader.load();
-        Scene scene = new Scene(root, 700, 560);
+        Scene scene = new Scene(root, 800, 500);
         s.setScene(scene);
         s.setTitle("Pedido");
         s.show();
