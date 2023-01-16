@@ -4,22 +4,20 @@
  */
 package com.pooespol.tandazopauleth.proyectotandazo;
 
+import Excecpcion.ValorInsuficienteException;
 import Menu.Menu;
 import Menu.tipoMenu;
-import static com.pooespol.tandazopauleth.proyectotandazo.App.crearListaMenu;
-import static com.pooespol.tandazopauleth.proyectotandazo.App.listaMenu;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
@@ -36,7 +34,29 @@ public class PedidoController implements Initializable {
     @FXML
     private ComboBox<String> cbxTipo;
     @FXML
+    private ComboBox<String> cbxOrdenar;
+    @FXML
     private VBox vboxmenu;
+    @FXML
+    private Label descripcion;
+    @FXML
+    private Label precio;
+    @FXML
+    private TextField cantidad;
+    @FXML
+    private Button botonAgregar;
+    @FXML
+    private TableView tablaPedidos;
+    @FXML
+    private Button botonLimpiar;
+    @FXML
+    private Button botonContinuar;
+    @FXML
+    private Label subtotal;
+    @FXML
+    private Label iva;
+    @FXML
+    Label total;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -48,32 +68,34 @@ public class PedidoController implements Initializable {
         cbxTipo.getItems().add("Piqueo");
         cbxTipo.addEventHandler(ActionEvent.ACTION, E -> {
             vboxmenu.getChildren().clear();
+            vboxmenu.setSpacing(10);
             if (cbxTipo.getValue() != null) {
 
                 switch (cbxTipo.getValue()) {
                     case "Plato Fuerte":
 
                         for (Menu menu : CrearMenu("F")) {
-                            GridPane cas1 = CrearHboxMenu(menu);
+                            HBox cas1 = CrearHboxMenu(menu);
                             vboxmenu.getChildren().add(cas1);
                         }
                         break;
                     case "Postre":
 
                         for (Menu menu : CrearMenu("P")) {
-                            GridPane cas1 = CrearHboxMenu(menu);
+                            HBox cas1 = CrearHboxMenu(menu);
                             vboxmenu.getChildren().add(cas1);
                         }
                         break;
                     case "Bebida":
                         for (Menu menu : CrearMenu("B")) {
-                            GridPane cas1 = CrearHboxMenu(menu);
+                            HBox cas1 = CrearHboxMenu(menu);
                             vboxmenu.getChildren().add(cas1);
+
                         }
                         break;
                     case "Piqueo":
                         for (Menu menu : CrearMenu("Q")) {
-                            GridPane cas1 = CrearHboxMenu(menu);
+                            HBox cas1 = CrearHboxMenu(menu);
                             vboxmenu.getChildren().add(cas1);
                         }
                         break;
@@ -84,18 +106,37 @@ public class PedidoController implements Initializable {
 
             }
         });
+
+//        botonAgregar.addEventHandler(ActionEvent.ACTION, E -> {
+//
+//            try {
+//                if (Integer.parseInt(cantidad.getText()) <= 0) {
+//                    throw new ValorInsuficienteException("Ingrese una cantidad válida");
+//                } else {
+//                    ObservableList<Pedido> pedidos = FXCollections.observableArrayList();
+//                    Pedido pedido = new Pedido(descripcion.getText(), Double.parseDouble(cantidad.getText()), Double.parseDouble(precio.getText()));
+//                    pedidos.add(pedido);
+//                    tablaPedidos.setItems(pedidos);
+//                }
+//            } catch (ValorInsuficienteException e) {
+//                e.getMessage();
+//            }
+//        });
+
     }
 
-    private GridPane CrearHboxMenu(Menu menu) {
-        GridPane cas1 = new GridPane();
-        Label descripcion = new Label(menu.getDescripcion());
-        Label precio = new Label(String.valueOf(menu.getPrecio()));
-        TextField cantidad = new TextField("");
-
-        Button botonAgregar = new Button("Agregar");
-        cas1.addRow(0, descripcion, precio, cantidad, botonAgregar);
-        cas1.setAlignment(Pos.CENTER);
-
+    private HBox CrearHboxMenu(Menu menu) {
+        HBox cas1 = new HBox();
+        descripcion = new Label(menu.getDescripcion());
+        descripcion.setPrefWidth(152);
+        precio = new Label(String.valueOf(menu.getPrecio()));
+        precio.setPrefWidth(46);
+        cantidad = new TextField("");
+        cantidad.setPrefWidth(65);
+        botonAgregar = new Button("Agregar");
+        botonAgregar.setPrefWidth(62);
+        cas1.getChildren().addAll(descripcion, precio, cantidad, botonAgregar);
+        cas1.setSpacing(40);
 //        cas1.getChildren().addAll(descripcion, precio, cantidad, botonAgregar);
         return cas1;
     }
@@ -112,4 +153,17 @@ public class PedidoController implements Initializable {
     }
 
     //primero tengo que 
+    @FXML
+    public void limpiar(ActionEvent event1) {
+        cantidad.clear();
+        subtotal.setText("0.00");
+        iva.setText("0.00");
+        total.setText("0.00");
+        tablaPedidos.getItems().clear();
+    }
+
+    @FXML
+    public void continuar(ActionEvent event2) {
+
+    }
 }
