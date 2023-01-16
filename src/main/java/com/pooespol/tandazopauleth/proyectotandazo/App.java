@@ -30,7 +30,7 @@ public class App extends Application {
     public void start(Stage s) throws IOException {
         FXMLLoader fxmlloader = new FXMLLoader(App.class.getResource("Principal.fxml"));
         Parent root = fxmlloader.load();
-        scene = new Scene(root, 640, 400);
+        scene = new Scene(root, 640, 600);
         s.setScene(scene);
         s.setTitle("Página de Inicio");
         s.show();
