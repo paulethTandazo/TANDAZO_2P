@@ -12,6 +12,9 @@ import Cliente.Cliente;
  */
 public class Pedido {
     private String idPedido;
+    private String descripcion;
+    private double cantidad;
+    private double precio;
     private Cliente nombreCliente;
     private double total;
 
@@ -21,9 +24,17 @@ public class Pedido {
         this.total = total;
     }
 
+    public Pedido(String descripcion, double cantidad, double precio) {
+        this.descripcion = descripcion;
+        this.cantidad = cantidad;
+        this.precio = precio;
+    }
+
     @Override
     public String toString() {
-        return "Pedido{" + "idPedido=" + idPedido + ", nombreCliente=" + nombreCliente + ", total=" + total + '}';
+        return "Pedido{" + "idPedido=" + idPedido + ", descripcion=" + descripcion + ", cantidad=" + cantidad + ", precio=" + precio + ", nombreCliente=" + nombreCliente + ", total=" + total + '}';
     }
+
+ 
     
 }
