@@ -47,5 +47,5 @@ public class Menu {
     public String toString() {
         return "Menu{" + "descripcion=" + descripcion + ", precio=" + precio + ", tipo=" + tipo + '}';
     }
-    
+
 }
