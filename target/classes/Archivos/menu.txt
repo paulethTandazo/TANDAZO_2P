@@ -2,6 +2,7 @@ descripcion,precio,tipo
 hamburguesa simple,5.00,F
 Hamburguesa completa,6.50,F
 Torta de vainilla,3.5,P
+7up cero 400ml,3,B
 Inca cola 400ml,1,B
 tiramisú,4.00,P
 coca cola 400ml,2.00,B

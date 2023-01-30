@@ -1,0 +1,63 @@
+@options
+@packages
+@argfile
+--class-path
+'C:/Users/marle/.m2/repository/org/openjfx/javafx-controls/13/javafx-controls-13.jar;C:/Users/marle/.m2/repository/org/openjfx/javafx-graphics/13/javafx-graphics-13.jar;C:/Users/marle/.m2/repository/org/openjfx/javafx-base/13/javafx-base-13.jar;C:/Users/marle/.m2/repository/org/openjfx/javafx-fxml/13/javafx-fxml-13.jar'
+--module-path
+'C:/Users/marle/.m2/repository/org/openjfx/javafx-graphics/13/javafx-graphics-13-win.jar;C:/Users/marle/.m2/repository/org/openjfx/javafx-base/13/javafx-base-13-win.jar;C:/Users/marle/.m2/repository/org/openjfx/javafx-controls/13/javafx-controls-13-win.jar;C:/Users/marle/OneDrive/Documentos/PROYECTO_2P/PROYECTOTANDAZO/target/classes;C:/Users/marle/.m2/repository/org/openjfx/javafx-fxml/13/javafx-fxml-13-win.jar'
+--patch-module
+com.pooespol.tandazopauleth.proyectotandazo='C:/Users/marle/OneDrive/Documentos/PROYECTO_2P/PROYECTOTANDAZO/src/main/java'
+-encoding
+'UTF-8'
+-protected
+-source
+'11'
+--module-source-path
+'C:/Users/marle/OneDrive/Documentos/PROYECTO_2P/PROYECTOTANDAZO/target/site/apidocs/src'
+-author
+-bottom
+'Copyright &#169; 2023. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/marle/OneDrive/Documentos/PROYECTO_2P/PROYECTOTANDAZO/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'PROYECTOTANDAZO 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/en/java/javase/11/docs/api' 'C:/Users/marle/OneDrive/Documentos/PROYECTO_2P/PROYECTOTANDAZO/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'PROYECTOTANDAZO 1.0-SNAPSHOT API'
+Cliente
+com.pooespol.tandazopauleth.proyectotandazo
+Excecpcion
+Local
+Menu
+Pago
+Pedido
+'C:/Users/marle/OneDrive/Documentos/PROYECTO_2P/PROYECTOTANDAZO/src/main/java/module-info.java'
+C:\Users\marle\OneDrive\Documentos\PROYECTO_2P\PROYECTOTANDAZO\target\site\apidocs\allclasses-index.html = 1675108931964
+C:\Users\marle\OneDrive\Documentos\PROYECTO_2P\PROYECTOTANDAZO\target\site\apidocs\allclasses.html = 1675108931985
+C:\Users\marle\OneDrive\Documentos\PROYECTO_2P\PROYECTOTANDAZO\target\site\apidocs\allpackages-index.html = 1675108931968
+C:\Users\marle\OneDrive\Documentos\PROYECTO_2P\PROYECTOTANDAZO\target\site\apidocs\constant-values.html = 1675108931474
+C:\Users\marle\OneDrive\Documentos\PROYECTO_2P\PROYECTOTANDAZO\target\site\apidocs\deprecated-list.html = 1675108931979
+C:\Users\marle\OneDrive\Documentos\PROYECTO_2P\PROYECTOTANDAZO\target\site\apidocs\element-list = 1675108931208
+C:\Users\marle\OneDrive\Documentos\PROYECTO_2P\PROYECTOTANDAZO\target\site\apidocs\help-doc.html = 1675108931996
+C:\Users\marle\OneDrive\Documentos\PROYECTO_2P\PROYECTOTANDAZO\target\site\apidocs\index-all.html = 1675108931953
+C:\Users\marle\OneDrive\Documentos\PROYECTO_2P\PROYECTOTANDAZO\target\site\apidocs\index.html = 1675108931990
+C:\Users\marle\OneDrive\Documentos\PROYECTO_2P\PROYECTOTANDAZO\target\site\apidocs\member-search-index.js = 1675108931946
+C:\Users\marle\OneDrive\Documentos\PROYECTO_2P\PROYECTOTANDAZO\target\site\apidocs\member-search-index.zip = 1675108931948
+C:\Users\marle\OneDrive\Documentos\PROYECTO_2P\PROYECTOTANDAZO\target\site\apidocs\module-search-index.js = 1675108931933
+C:\Users\marle\OneDrive\Documentos\PROYECTO_2P\PROYECTOTANDAZO\target\site\apidocs\module-search-index.zip = 1675108931937
+C:\Users\marle\OneDrive\Documentos\PROYECTO_2P\PROYECTOTANDAZO\target\site\apidocs\overview-tree.html = 1675108931883
+C:\Users\marle\OneDrive\Documentos\PROYECTO_2P\PROYECTOTANDAZO\target\site\apidocs\package-search-index.js = 1675108931938
+C:\Users\marle\OneDrive\Documentos\PROYECTO_2P\PROYECTOTANDAZO\target\site\apidocs\package-search-index.zip = 1675108931940
+C:\Users\marle\OneDrive\Documentos\PROYECTO_2P\PROYECTOTANDAZO\target\site\apidocs\script.js = 1675108932006
+C:\Users\marle\OneDrive\Documentos\PROYECTO_2P\PROYECTOTANDAZO\target\site\apidocs\search.js = 1675108932014
+C:\Users\marle\OneDrive\Documentos\PROYECTO_2P\PROYECTOTANDAZO\target\site\apidocs\serialized-form.html = 1675108931502
+C:\Users\marle\OneDrive\Documentos\PROYECTO_2P\PROYECTOTANDAZO\target\site\apidocs\stylesheet.css = 1675108932003
+C:\Users\marle\OneDrive\Documentos\PROYECTO_2P\PROYECTOTANDAZO\target\site\apidocs\type-search-index.js = 1675108931942
+C:\Users\marle\OneDrive\Documentos\PROYECTO_2P\PROYECTOTANDAZO\target\site\apidocs\type-search-index.zip = 1675108931943

@@ -49,7 +49,7 @@
          <children>
             <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@img/delivery.jpg" />
+                  <Image url="@../../../../Imagenes/delivery.jpg" />
                </image>
             </ImageView>
             <Button fx:id="btnIngresar" mnemonicParsing="false" onAction="#Ingresar" style="-fx-background-color: #ed891d;" text="Ingresar">
@@ -59,7 +59,7 @@
             </Button>
             <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@img/depositphotos_63851453-stock-illustration-hamburger-is-exploding-vector-illustration.jpg" />
+                  <Image url="@../../../../Imagenes/depositphotos_63851453-stock-illustration-hamburger-is-exploding-vector-illustration.jpg" />
                </image>
             </ImageView>
          </children>
