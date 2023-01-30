@@ -4,8 +4,10 @@
  */
 package Excecpcion;
 
+import java.io.IOException;
+
 /**
- *
+ * Clase que genera una excepcion propia 
  * @author marle
  */
 public class ValorInsuficienteException extends Exception{
