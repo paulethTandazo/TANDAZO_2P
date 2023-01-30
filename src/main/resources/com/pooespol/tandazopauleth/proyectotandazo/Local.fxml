@@ -1,31 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.Pane?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <ImageView fitHeight="413.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@img/mapa2.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="59.0" fitWidth="41.0" layoutX="216.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@img/restaurante%20(2).png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="59.0" fitWidth="41.0" layoutX="167.0" layoutY="355.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@img/restaurante%20(2).png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="59.0" fitWidth="41.0" layoutX="343.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@img/restaurante%20(2).png" />
-         </image>
-      </ImageView>
-   </children>
-</Pane>
+<ScrollPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pooespol.tandazopauleth.proyectotandazo.LocalController">
+   <content>
+      <Pane fx:id="paneRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1778.0" prefWidth="2628.0" style="-fx-background-image: url('file:src/main/resources/Imagenes/mapa2.png');" />
+   </content>
+</ScrollPane>
