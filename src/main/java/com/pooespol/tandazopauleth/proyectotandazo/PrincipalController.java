@@ -16,13 +16,25 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-
+/**
+ * Clase que contiene el controller de la ventana principal
+ * @author marle
+ */
 public class PrincipalController implements Initializable {
 
+    /**
+     * Método initialize se invoca automáticamente cuando la vista está cargada
+     * y se utiliza para inicializar los componentes y asignarles los valores o
+     * eventos necesarios antes de que la vista sea mostrada al usuario
+     *
+     * @param url recibe un URl como parametro
+     * @param rb recibe un ResourceBundle como parametro
+     */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
 
     }
+
     @FXML
     private Label lblMensajeUsuario;
     @FXML
@@ -30,6 +42,13 @@ public class PrincipalController implements Initializable {
     @FXML
     private PasswordField txtContraseña;
 
+    /**
+     * Método que se encargara de carga la vista cada que se aplaste en el boton
+     * Ingresar
+     *
+     * @param event recibe como parametro un ActionEvent
+     * @throws IOException lanza una excepción verificada
+     */
     @FXML
     public void Ingresar(ActionEvent event) throws IOException {
 
@@ -45,7 +64,7 @@ public class PrincipalController implements Initializable {
             s.setScene(scene);
             s.setTitle("Página de Bienvenida");
             s.show();
-            
+
             System.out.println(App.usuario.getUser());
         } else {
             txtUsuario.clear();
@@ -56,6 +75,13 @@ public class PrincipalController implements Initializable {
 
     }
 
+    /**
+     * Método estático que valida al usuario
+     *
+     * @param user recibe como parametro un String
+     * @param password recibe como parametro un String
+     * @return retorna un cliente
+     */
     public static Cliente verificarUsuario(String user, String password) {
         for (Cliente usuario : listaUsuarios) {
             if (usuario.getUser().equals(user) && usuario.getPassword().equals(password)) {
