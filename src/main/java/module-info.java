@@ -4,5 +4,5 @@ module com.pooespol.tandazopauleth.proyectotandazo {
     requires java.base;
 
     opens com.pooespol.tandazopauleth.proyectotandazo to javafx.fxml;
-    exports com.pooespol.tandazopauleth.proyectotandazo;
+    exports com.pooespol.tandazopauleth.proyectotandazo;  
 }
