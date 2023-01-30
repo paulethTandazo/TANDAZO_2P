@@ -5,7 +5,7 @@
 package Menu;
 
 /**
- *
+ * clase que contiene los enums dependiendo del tipo del menu
  * @author marle
  */
 public enum tipoMenu {
